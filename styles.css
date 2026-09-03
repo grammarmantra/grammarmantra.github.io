@@ -30,8 +30,3 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-input,
-textarea {
-  user-select: text;
-  -webkit-user-select: text;
-}
