@@ -23,3 +23,15 @@ footer{background:#211d19;color:#fff;padding:55px 0 20px}.footer-grid{display:gr
 @media(max-width:560px){
   .container{width:min(100% - 28px,1120px)}.brand img{width:130px;height:54px}.hero h1{font-size:43px}.hero-text{font-size:16px}.hero-art{transform:scale(.9);margin:-10px 0}.topic-grid,.video-grid,.article-grid,.shorts-grid,.vocab-grid{grid-template-columns:1fr}.section-heading h2{font-size:33px}.practice-grid{gap:35px}.practice-grid h2{font-size:35px}.footer-grid{grid-template-columns:1fr 1fr;gap:30px}.footer-grid>div:first-child{grid-column:1/-1}
 }
+/* Prevent accidental text selection */
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+input,
+textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}
