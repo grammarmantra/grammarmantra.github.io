@@ -1,4 +1,574 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sentence Correction | Grammar Mantra</title><link rel="stylesheet" href="../styles.css"></head><body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="../index.html"><img src="../assets/logo.jpg" alt="Grammar Mantra logo"></a><button class="menu-toggle" aria-label="Open menu">☰</button><nav class="nav"><a href="../index.html">Home</a><a class="active" href="../grammar.html">Grammar</a><a href="../index.html#vocabulary">Vocabulary</a><a href="../index.html#practice">Practice</a><a href="../index.html#videos">Videos</a><a class="nav-cta" href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">Watch on YouTube ↗</a></nav></div></header>
-<main><section class="hero"><div class="container"><p class="eyebrow">ENGLISH GRAMMAR</p><h1>Sentence Correction</h1><p class="hero-text">This lesson page is part of Grammar Mantra's topic library. Detailed rules, examples and practice for this topic will be added here.</p><a class="btn btn-primary" href="../grammar.html">← Back to Grammar</a></div></section><section class="section"><div class="container"><div class="practice-section" style="padding:30px;border-radius:20px"><h2 style="margin-top:0">Coming next</h2><p>We're building this topic with the same detailed lesson format used for Tenses.</p></div></div></section></main>
-<footer><div class="container footer-grid"><div><div class="footer-brand">Grammar Mantra</div><p>Learn English. Understand Grammar. Improve Every Day.</p></div><div><h4>Explore</h4><a href="../grammar.html">Grammar</a><a href="../index.html#vocabulary">Vocabulary</a><a href="../index.html#practice">Practice</a><a href="../index.html#videos">Videos</a></div><div><h4>Connect</h4><a href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">YouTube</a></div></div><div class="container copyright">© <span id="year"></span> Grammar Mantra. All rights reserved.</div></footer><script src="../script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description" content="Learn English Sentence Correction with Grammar Mantra — common grammar errors, rules, examples and correction tips.">
+
+<title>Sentence Correction | Rules, Examples & Practice | Grammar Mantra</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles.css">
+
+<style>
+.lesson-hero{
+  padding:58px 0 65px;
+  background:linear-gradient(115deg,#fffaf3,#fff2e3);
+  border-bottom:1px solid var(--line)
+}
+
+.crumb{
+  font-size:12px;
+  color:#8b8279;
+  margin-bottom:20px
+}
+
+.crumb a{
+  color:var(--orange);
+  font-weight:700
+}
+
+.lesson-hero h1{
+  font:700 clamp(42px,5vw,62px)/1.05 "Playfair Display",serif;
+  margin:0 0 16px
+}
+
+.lesson-hero h1 span{
+  color:var(--orange)
+}
+
+.lesson-hero .lead{
+  max-width:720px;
+  color:var(--muted);
+  font-size:17px;
+  margin:0
+}
+
+.lesson-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 280px;
+  gap:42px
+}
+
+.lesson-content h2{
+  font:700 34px/1.15 "Playfair Display",serif;
+  margin:0 0 15px
+}
+
+.lesson-content h3{
+  font-size:21px;
+  margin:30px 0 10px
+}
+
+.lesson-content p,
+.lesson-content ul{
+  color:var(--muted)
+}
+
+.lesson-content ul{
+  padding-left:22px
+}
+
+.info-box{
+  background:#fff3e5;
+  border:1px solid #f1d1b3;
+  border-radius:18px;
+  padding:20px;
+  margin:25px 0
+}
+
+.info-box strong{
+  color:var(--ink)
+}
+
+.correction-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:17px;
+  background:#fff;
+  font-size:13px
+}
+
+.correction-table th,
+.correction-table td{
+  padding:15px;
+  border-bottom:1px solid var(--line);
+  text-align:left;
+  vertical-align:top
+}
+
+.correction-table th{
+  background:#fff3e5;
+  color:#3b332c;
+  font-size:11px;
+  letter-spacing:.6px;
+  text-transform:uppercase
+}
+
+.correction-table tr:last-child td{
+  border-bottom:0
+}
+
+.wrong{
+  color:#b44a3a;
+  font-weight:700
+}
+
+.right{
+  color:#28734b;
+  font-weight:700
+}
+
+.example{
+  border-left:3px solid var(--orange);
+  padding:10px 15px;
+  margin:12px 0;
+  background:#fff
+}
+
+.example .wrong{
+  display:block;
+  margin-bottom:5px
+}
+
+.example .right{
+  display:block
+}
+
+.side-card{
+  position:sticky;
+  top:100px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:21px;
+  box-shadow:0 5px 20px rgba(50,35,20,.04)
+}
+
+.side-card h3{
+  font:700 21px "Playfair Display",serif;
+  margin:0 0 14px
+}
+
+.side-card a{
+  display:block;
+  font-size:12px;
+  color:#6f6861;
+  padding:9px 0;
+  border-bottom:1px solid #f0e7dd
+}
+
+.side-card a:hover{
+  color:var(--orange)
+}
+
+.side-card a:last-child{
+  border:0
+}
+
+.cta-box{
+  margin-top:35px;
+  padding:30px;
+  border-radius:20px;
+  background:#29241f;
+  color:#fff
+}
+
+.cta-box h2{
+  font-size:29px;
+  margin:0 0 8px
+}
+
+.cta-box p{
+  color:#c7beb5;
+  margin:0 0 20px
+}
+
+@media(max-width:850px){
+  .lesson-layout{
+    grid-template-columns:1fr
+  }
+
+  .side-card{
+    position:static
+  }
+
+  .correction-table{
+    font-size:12px
+  }
+}
+
+@media(max-width:560px){
+  .lesson-hero{
+    padding:50px 0
+  }
+
+  .lesson-content h2{
+    font-size:30px
+  }
+
+  .correction-table{
+    display:block;
+    overflow-x:auto
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-wrap">
+
+<a class="brand" href="../index.html">
+<img src="../assets/logo.jpg" alt="Grammar Mantra logo">
+</a>
+
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a class="active" href="../grammar.html">Grammar</a>
+<a href="../index.html#vocabulary">Vocabulary</a>
+<a href="../index.html#practice">Practice</a>
+<a href="../index.html#videos">Videos</a>
+
+<a class="nav-cta"
+href="https://www.youtube.com/@grammarmantra"
+target="_blank"
+rel="noopener">
+Watch on YouTube ↗
+</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<section class="lesson-hero">
+<div class="container">
+
+<div class="crumb">
+<a href="../index.html">Home</a>
+&nbsp;›&nbsp;
+<a href="../grammar.html">Grammar</a>
+&nbsp;›&nbsp;
+Sentence Correction
+</div>
+
+<p class="eyebrow">ENGLISH GRAMMAR • PRACTICE</p>
+
+<h1>Sentence <span>Correction</span></h1>
+
+<p class="lead">
+Learn how to identify and correct common English grammar mistakes.
+Improve sentence accuracy with simple rules and practical examples.
+</p>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container lesson-layout">
+
+<article class="lesson-content">
+
+<h2>What is Sentence Correction?</h2>
+
+<p>
+Sentence correction means finding and fixing grammatical errors in a sentence.
+The mistake may be related to tense, subject-verb agreement, articles,
+prepositions, pronouns, word usage or sentence structure.
+</p>
+
+<div class="info-box">
+<strong>Quick idea:</strong>
+First find the part of the sentence that sounds incorrect.
+Then identify the grammar rule involved and replace the incorrect form with the correct one.
+</div>
+
+
+<h2 id="common">Common Sentence Errors</h2>
+
+<table class="correction-table">
+
+<thead>
+<tr>
+<th>Incorrect</th>
+<th>Correct</th>
+<th>Rule</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td class="wrong">He go to school every day.</td>
+<td class="right">He goes to school every day.</td>
+<td>Subject-Verb Agreement</td>
+</tr>
+
+<tr>
+<td class="wrong">She have a car.</td>
+<td class="right">She has a car.</td>
+<td>Subject-Verb Agreement</td>
+</tr>
+
+<tr>
+<td class="wrong">I am living here since 2020.</td>
+<td class="right">I have been living here since 2020.</td>
+<td>Tense</td>
+</tr>
+
+<tr>
+<td class="wrong">He is good in English.</td>
+<td class="right">He is good at English.</td>
+<td>Preposition</td>
+</tr>
+
+<tr>
+<td class="wrong">She is an university student.</td>
+<td class="right">She is a university student.</td>
+<td>Article</td>
+</tr>
+
+<tr>
+<td class="wrong">Each students has a book.</td>
+<td class="right">Each student has a book.</td>
+<td>Number / Agreement</td>
+</tr>
+
+</tbody>
+</table>
+
+
+<h2 id="method">How to Correct a Sentence</h2>
+
+<h3>1. Read the complete sentence</h3>
+
+<p>
+Do not immediately change the first word that looks unusual.
+Read the complete sentence and understand its meaning first.
+</p>
+
+
+<h3>2. Find the subject and verb</h3>
+
+<p>
+Check whether the subject and verb agree in number and person.
+</p>
+
+<div class="example">
+<span class="wrong">The boys plays cricket.</span>
+<span class="right">The boys play cricket.</span>
+</div>
+
+
+<h3>3. Check the tense</h3>
+
+<p>
+Look for time expressions and make sure the verb form matches the intended time.
+</p>
+
+<div class="example">
+<span class="wrong">She went to school every day.</span>
+<span class="right">She goes to school every day.</span>
+</div>
+
+
+<h3>4. Check articles</h3>
+
+<p>
+Check whether <strong>a, an</strong> or <strong>the</strong> is required and whether the correct article has been used.
+</p>
+
+<div class="example">
+<span class="wrong">He is an European.</span>
+<span class="right">He is a European.</span>
+</div>
+
+
+<h3>5. Check prepositions</h3>
+
+<p>
+Some words are normally followed by particular prepositions.
+</p>
+
+<div class="example">
+<span class="wrong">She is interested on music.</span>
+<span class="right">She is interested in music.</span>
+</div>
+
+
+<h3>6. Check pronouns</h3>
+
+<p>
+Make sure the pronoun agrees correctly with the noun and is used in the correct form.
+</p>
+
+<div class="example">
+<span class="wrong">Me and Rahul went there.</span>
+<span class="right">Rahul and I went there.</span>
+</div>
+
+
+<h2 id="areas">Important Areas to Check</h2>
+
+<ul>
+<li>Subject-Verb Agreement</li>
+<li>Tenses</li>
+<li>Articles</li>
+<li>Prepositions</li>
+<li>Pronouns</li>
+<li>Adjectives and Adverbs</li>
+<li>Conjunctions</li>
+<li>Modals</li>
+<li>Word order</li>
+<li>Parallel structure</li>
+</ul>
+
+
+<h2 id="exam">Sentence Correction in Exams</h2>
+
+<p>
+In competitive examinations, sentence correction questions often test one
+specific grammar rule. Instead of changing the whole sentence randomly,
+identify the exact error and apply the relevant rule.
+</p>
+
+<div class="info-box">
+<strong>Exam tip:</strong>
+Check the sentence systematically:
+<strong>Subject → Verb → Tense → Article → Preposition → Pronoun → Word order.</strong>
+</div>
+
+
+<h2 id="examples">Practice Examples</h2>
+
+<div class="example">
+<span class="wrong">He don't know the answer.</span>
+<span class="right">He doesn't know the answer.</span>
+</div>
+
+<div class="example">
+<span class="wrong">She is senior than me.</span>
+<span class="right">She is senior to me.</span>
+</div>
+
+<div class="example">
+<span class="wrong">I have seen him yesterday.</span>
+<span class="right">I saw him yesterday.</span>
+</div>
+
+<div class="example">
+<span class="wrong">Neither of the boys are ready.</span>
+<span class="right">Neither of the boys is ready.</span>
+</div>
+
+
+<h2 id="mistakes">Common Mistakes</h2>
+
+<ul>
+<li>Changing a correct part of the sentence unnecessarily.</li>
+<li>Ignoring the subject-verb relationship.</li>
+<li>Using the wrong tense with a clear time expression.</li>
+<li>Choosing an article based only on spelling instead of pronunciation.</li>
+<li>Translating prepositions directly from another language.</li>
+<li>Focusing on vocabulary when the actual error is grammatical.</li>
+</ul>
+
+
+<div class="cta-box">
+
+<p class="eyebrow">GRAMMAR MANTRA</p>
+
+<h2>Ready to practice?</h2>
+
+<p>
+Put your grammar knowledge to the test with sentence correction questions.
+</p>
+
+<a class="btn btn-primary"
+href="../index.html#practice">
+Start Practicing →
+</a>
+
+</div>
+
+</article>
+
+
+<aside class="side-card">
+
+<h3>On this page</h3>
+
+<a href="#common">Common Sentence Errors</a>
+<a href="#method">How to Correct a Sentence</a>
+<a href="#areas">Important Areas to Check</a>
+<a href="#exam">Sentence Correction in Exams</a>
+<a href="#examples">Practice Examples</a>
+<a href="#mistakes">Common Mistakes</a>
+<a href="../grammar.html">← All Grammar Topics</a>
+
+</aside>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+<div class="footer-brand">Grammar Mantra</div>
+<p>Learn English. Understand Grammar. Improve Every Day.</p>
+</div>
+
+<div>
+<h4>Explore</h4>
+<a href="../grammar.html">Grammar</a>
+<a href="../index.html#vocabulary">Vocabulary</a>
+<a href="../index.html#practice">Practice</a>
+<a href="../index.html#videos">Videos</a>
+</div>
+
+<div>
+<h4>Connect</h4>
+
+<a href="https://www.youtube.com/@grammarmantra"
+target="_blank"
+rel="noopener">
+YouTube
+</a>
+
+<a href="#">About</a>
+<a href="#">Contact</a>
+
+</div>
+
+</div>
+
+<div class="container copyright">
+© <span id="year"></span> Grammar Mantra. All rights reserved.
+</div>
+
+</footer>
+
+
+<script src="../script.js"></script>
+
+</body>
+</html>
