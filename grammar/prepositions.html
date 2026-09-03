@@ -1,4 +1,832 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prepositions | Grammar Mantra</title><link rel="stylesheet" href="../styles.css"></head><body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="../index.html"><img src="../assets/logo.jpg" alt="Grammar Mantra logo"></a><button class="menu-toggle" aria-label="Open menu">☰</button><nav class="nav"><a href="../index.html">Home</a><a class="active" href="../grammar.html">Grammar</a><a href="../index.html#vocabulary">Vocabulary</a><a href="../index.html#practice">Practice</a><a href="../index.html#videos">Videos</a><a class="nav-cta" href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">Watch on YouTube ↗</a></nav></div></header>
-<main><section class="hero"><div class="container"><p class="eyebrow">ENGLISH GRAMMAR</p><h1>Prepositions</h1><p class="hero-text">This lesson page is part of Grammar Mantra's topic library. Detailed rules, examples and practice for this topic will be added here.</p><a class="btn btn-primary" href="../grammar.html">← Back to Grammar</a></div></section><section class="section"><div class="container"><div class="practice-section" style="padding:30px;border-radius:20px"><h2 style="margin-top:0">Coming next</h2><p>We're building this topic with the same detailed lesson format used for Tenses.</p></div></div></section></main>
-<footer><div class="container footer-grid"><div><div class="footer-brand">Grammar Mantra</div><p>Learn English. Understand Grammar. Improve Every Day.</p></div><div><h4>Explore</h4><a href="../grammar.html">Grammar</a><a href="../index.html#vocabulary">Vocabulary</a><a href="../index.html#practice">Practice</a><a href="../index.html#videos">Videos</a></div><div><h4>Connect</h4><a href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">YouTube</a></div></div><div class="container copyright">© <span id="year"></span> Grammar Mantra. All rights reserved.</div></footer><script src="../script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description" content="Learn English prepositions with simple rules, examples and practice. Understand in, on, at, by, for, since, between, among and more.">
+
+<meta name="keywords" content="English prepositions, prepositions in English grammar, in on at, preposition rules, English grammar prepositions">
+
+<title>Prepositions | Rules, Examples & Practice | Grammar Mantra</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles.css">
+
+<style>
+.lesson-hero{
+  padding:58px 0 65px;
+  background:linear-gradient(115deg,#fffaf3,#fff2e3);
+  border-bottom:1px solid var(--line)
+}
+
+.crumb{
+  font-size:12px;
+  color:#8b8279;
+  margin-bottom:20px
+}
+
+.crumb a{
+  color:var(--orange);
+  font-weight:700
+}
+
+.lesson-hero h1{
+  font:700 clamp(42px,5vw,62px)/1.05 "Playfair Display",serif;
+  margin:0 0 16px
+}
+
+.lesson-hero h1 span{
+  color:var(--orange)
+}
+
+.lesson-hero .lead{
+  max-width:720px;
+  color:var(--muted);
+  font-size:17px;
+  margin:0
+}
+
+.lesson-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 280px;
+  gap:42px
+}
+
+.lesson-content h2{
+  font:700 34px/1.15 "Playfair Display",serif;
+  margin:0 0 15px
+}
+
+.lesson-content h3{
+  font-size:21px;
+  margin:30px 0 10px
+}
+
+.lesson-content p{
+  color:var(--muted)
+}
+
+.lesson-content ul{
+  color:var(--muted);
+  padding-left:22px
+}
+
+.info-box{
+  background:#fff3e5;
+  border:1px solid #f1d1b3;
+  border-radius:18px;
+  padding:20px;
+  margin:25px 0
+}
+
+.info-box strong{
+  color:var(--ink)
+}
+
+.grammar-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:17px;
+  background:#fff;
+  font-size:13px
+}
+
+.grammar-table th,
+.grammar-table td{
+  padding:15px;
+  border-bottom:1px solid var(--line);
+  text-align:left;
+  vertical-align:top
+}
+
+.grammar-table th{
+  background:#fff3e5;
+  color:#3b332c;
+  font-size:11px;
+  letter-spacing:.6px;
+  text-transform:uppercase
+}
+
+.grammar-table tr:last-child td{
+  border-bottom:0
+}
+
+.prep-name{
+  font-weight:800;
+  color:var(--ink)
+}
+
+.example{
+  border-left:3px solid var(--orange);
+  padding:10px 15px;
+  margin:12px 0;
+  background:#fff
+}
+
+.example em{
+  color:var(--orange);
+  font-style:normal;
+  font-weight:700
+}
+
+.rule-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+  margin:15px 0
+}
+
+.rule-card h3{
+  margin:0 0 8px;
+  font-size:20px
+}
+
+.rule-card p{
+  margin:7px 0
+}
+
+.side-card{
+  position:sticky;
+  top:100px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:21px;
+  box-shadow:0 5px 20px rgba(50,35,20,.04)
+}
+
+.side-card h3{
+  font:700 21px "Playfair Display",serif;
+  margin:0 0 14px
+}
+
+.side-card a{
+  display:block;
+  font-size:12px;
+  color:#6f6861;
+  padding:9px 0;
+  border-bottom:1px solid #f0e7dd
+}
+
+.side-card a:hover{
+  color:var(--orange)
+}
+
+.side-card a:last-child{
+  border:0
+}
+
+.mistakes{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px
+}
+
+.mistake{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:18px
+}
+
+.mistake .wrong{
+  color:#b44d3c;
+  font-size:13px;
+  margin-bottom:5px
+}
+
+.mistake .right{
+  color:#28784c;
+  font-size:13px;
+  font-weight:700
+}
+
+.quiz{
+  background:var(--cream-2);
+  border-radius:22px;
+  padding:30px
+}
+
+.quiz h3{
+  font:700 28px "Playfair Display",serif;
+  margin:0 0 20px
+}
+
+.question{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:18px;
+  margin-bottom:13px
+}
+
+.question p{
+  font-weight:700;
+  margin:0 0 10px
+}
+
+.options label{
+  display:block;
+  margin:7px 0;
+  color:var(--muted);
+  font-size:13px
+}
+
+.quiz button{
+  margin-top:10px;
+  border:0;
+  cursor:pointer
+}
+
+.result{
+  font-weight:700;
+  color:var(--orange);
+  margin-top:15px
+}
+
+.cta-box{
+  margin-top:35px;
+  padding:30px;
+  border-radius:20px;
+  background:#29241f;
+  color:#fff
+}
+
+.cta-box h2{
+  font-size:29px;
+  margin:0 0 8px
+}
+
+.cta-box p{
+  color:#c7beb5;
+  margin:0 0 20px
+}
+
+@media(max-width:850px){
+  .lesson-layout{
+    grid-template-columns:1fr
+  }
+
+  .side-card{
+    position:static
+  }
+
+  .grammar-table{
+    font-size:12px
+  }
+
+  .grammar-table th,
+  .grammar-table td{
+    padding:11px
+  }
+}
+
+@media(max-width:560px){
+  .lesson-hero{
+    padding:50px 0
+  }
+
+  .lesson-content h2{
+    font-size:30px
+  }
+
+  .grammar-table{
+    display:block;
+    overflow-x:auto;
+    white-space:normal
+  }
+
+  .mistakes{
+    grid-template-columns:1fr
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-wrap">
+
+<a class="brand" href="../index.html">
+<img src="../assets/logo.jpg" alt="Grammar Mantra logo">
+</a>
+
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a class="active" href="../grammar.html">Grammar</a>
+<a href="../index.html#vocabulary">Vocabulary</a>
+<a href="../index.html#practice">Practice</a>
+<a href="../index.html#videos">Videos</a>
+<a class="nav-cta" href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">
+Watch on YouTube ↗
+</a>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<section class="lesson-hero">
+<div class="container">
+
+<div class="crumb">
+<a href="../index.html">Home</a>
+&nbsp;›&nbsp;
+<a href="../grammar.html">Grammar</a>
+&nbsp;›&nbsp;
+Prepositions
+</div>
+
+<p class="eyebrow">ENGLISH GRAMMAR • PREPOSITIONS</p>
+
+<h1>Prepositions <span>made simple.</span></h1>
+
+<p class="lead">
+Learn how to use common English prepositions with simple rules,
+clear examples and practical practice.
+</p>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container lesson-layout">
+
+<article class="lesson-content">
+
+<h2>What is a Preposition?</h2>
+
+<p>
+A preposition is a word that shows the relationship between a noun
+or pronoun and another word in a sentence. It can show place, time,
+direction, movement and other relationships.
+</p>
+
+<div class="info-box">
+<strong>Quick idea:</strong>
+Words such as <strong>in, on, at, by, for, since, under, between</strong>
+and <strong>among</strong> are common prepositions.
+</div>
+
+
+<h2 id="overview">Common Prepositions at a Glance</h2>
+
+<table class="grammar-table">
+
+<thead>
+<tr>
+<th>Preposition</th>
+<th>Common Use</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td class="prep-name">In</td>
+<td>Inside a place; months, years and longer periods.</td>
+<td>She lives <em>in</em> Delhi.</td>
+</tr>
+
+<tr>
+<td class="prep-name">On</td>
+<td>Surface; days and dates.</td>
+<td>The book is <em>on</em> the table.</td>
+</tr>
+
+<tr>
+<td class="prep-name">At</td>
+<td>Specific point or exact time.</td>
+<td>Meet me <em>at</em> 5 PM.</td>
+</tr>
+
+<tr>
+<td class="prep-name">By</td>
+<td>Deadline or latest time; means of transport.</td>
+<td>Finish it <em>by</em> Monday.</td>
+</tr>
+
+<tr>
+<td class="prep-name">For</td>
+<td>Duration of time.</td>
+<td>I have lived here <em>for</em> five years.</td>
+</tr>
+
+<tr>
+<td class="prep-name">Since</td>
+<td>Starting point of an action or period.</td>
+<td>She has been here <em>since</em> Monday.</td>
+</tr>
+
+<tr>
+<td class="prep-name">Between</td>
+<td>Position or relationship involving two people or things.</td>
+<td>The shop is <em>between</em> the bank and the school.</td>
+</tr>
+
+<tr>
+<td class="prep-name">Among</td>
+<td>Relationship involving more than two people or things.</td>
+<td>He was sitting <em>among</em> his friends.</td>
+</tr>
+
+</tbody>
+</table>
+
+
+<h2 id="time">Prepositions of Time</h2>
+
+<h3>In</h3>
+
+<p>
+Use <strong>in</strong> with months, years, seasons and longer periods.
+</p>
+
+<div class="example">
+I was born <em>in</em> 2000.
+</div>
+
+<div class="example">
+The exams will be held <em>in</em> March.
+</div>
+
+
+<h3>On</h3>
+
+<p>
+Use <strong>on</strong> with days and specific dates.
+</p>
+
+<div class="example">
+We will meet <em>on</em> Monday.
+</div>
+
+<div class="example">
+Her birthday is <em>on</em> 15 August.
+</div>
+
+
+<h3>At</h3>
+
+<p>
+Use <strong>at</strong> with specific clock times and certain fixed
+time expressions.
+</p>
+
+<div class="example">
+The train arrives <em>at</em> 6:30 PM.
+</div>
+
+<div class="example">
+I usually wake up <em>at</em> night.
+</div>
+
+
+<div class="rule-card">
+<h3>Easy way to remember</h3>
+<p><strong>In</strong> → longer period</p>
+<p><strong>On</strong> → day or date</p>
+<p><strong>At</strong> → exact time</p>
+</div>
+
+
+<h2 id="place">Prepositions of Place</h2>
+
+<h3>In</h3>
+
+<p>
+Use <strong>in</strong> when something is inside an area, container,
+city, country or enclosed space.
+</p>
+
+<div class="example">
+The children are <em>in</em> the room.
+</div>
+
+<div class="example">
+She lives <em>in</em> India.
+</div>
+
+
+<h3>On</h3>
+
+<p>
+Use <strong>on</strong> when something is touching or positioned on
+a surface.
+</p>
+
+<div class="example">
+The phone is <em>on</em> the table.
+</div>
+
+
+<h3>At</h3>
+
+<p>
+Use <strong>at</strong> for a particular point or location.
+</p>
+
+<div class="example">
+He is waiting <em>at</em> the bus stop.
+</div>
+
+
+<h2 id="duration">For and Since</h2>
+
+<h3>For — duration</h3>
+
+<p>
+<strong>For</strong> tells us how long something continues.
+</p>
+
+<div class="example">
+I have worked here <em>for</em> five years.
+</div>
+
+<div class="example">
+She has been studying <em>for</em> two hours.
+</div>
+
+
+<h3>Since — starting point</h3>
+
+<p>
+<strong>Since</strong> tells us when an action or situation began.
+</p>
+
+<div class="example">
+I have lived here <em>since</em> 2020.
+</div>
+
+<div class="example">
+She has been working <em>since</em> morning.
+</div>
+
+
+<h2 id="other">Other Important Prepositions</h2>
+
+<h3>By and Until</h3>
+
+<p>
+<strong>By</strong> means no later than a particular time.
+<strong>Until</strong> means up to a particular time.
+</p>
+
+<div class="example">
+Submit the form <em>by</em> Friday.
+</div>
+
+<div class="example">
+I will wait <em>until</em> Friday.
+</div>
+
+
+<h3>Between and Among</h3>
+
+<p>
+<strong>Between</strong> is commonly used for a relationship involving
+two people or things, while <strong>among</strong> is commonly used
+when something is considered within a group.
+</p>
+
+<div class="example">
+The agreement was made <em>between</em> the two countries.
+</div>
+
+<div class="example">
+She was sitting <em>among</em> her classmates.
+</div>
+
+
+<h3>Under and Over</h3>
+
+<div class="example">
+The shoes are <em>under</em> the bed.
+</div>
+
+<div class="example">
+The plane flew <em>over</em> the city.
+</div>
+
+
+<h2 id="mistakes">Common Mistakes</h2>
+
+<div class="mistakes">
+
+<div class="mistake">
+<div class="wrong">✕ He arrived in 5 PM.</div>
+<div class="right">✓ He arrived at 5 PM.</div>
+</div>
+
+<div class="mistake">
+<div class="wrong">✕ I was born on 2000.</div>
+<div class="right">✓ I was born in 2000.</div>
+</div>
+
+<div class="mistake">
+<div class="wrong">✕ She has lived here since five years.</div>
+<div class="right">✓ She has lived here for five years.</div>
+</div>
+
+<div class="mistake">
+<div class="wrong">✕ The book is in the table.</div>
+<div class="right">✓ The book is on the table.</div>
+</div>
+
+</div>
+
+
+<h2 id="tips">How to Learn Prepositions</h2>
+
+<p>
+Prepositions can be difficult because one preposition may have
+different uses. Instead of memorizing isolated words, learn them
+through common expressions and complete sentences.
+</p>
+
+<ul>
+<li>Learn <strong>in, on and at</strong> together.</li>
+<li>Practice time and place separately.</li>
+<li>Remember <strong>for</strong> for duration and <strong>since</strong> for a starting point.</li>
+<li>Learn common verb + preposition combinations.</li>
+<li>Practice with real sentences instead of only memorizing lists.</li>
+</ul>
+
+
+<div class="cta-box">
+
+<p class="eyebrow">GRAMMAR MANTRA</p>
+
+<h2>Want to improve your English grammar?</h2>
+
+<p>
+Learn grammar step by step with simple explanations,
+examples and practice questions.
+</p>
+
+<a class="btn btn-primary" href="../grammar.html">
+Explore More Grammar →
+</a>
+
+</div>
+
+</article>
+
+
+<aside class="side-card">
+
+<h3>On this page</h3>
+
+<a href="#overview">Common Prepositions</a>
+<a href="#time">Prepositions of Time</a>
+<a href="#place">Prepositions of Place</a>
+<a href="#duration">For and Since</a>
+<a href="#other">Other Important Prepositions</a>
+<a href="#mistakes">Common Mistakes</a>
+<a href="#tips">How to Learn</a>
+<a href="../grammar.html">← All Grammar Topics</a>
+
+</aside>
+
+</div>
+</section>
+
+
+<section class="section" style="padding-top:10px">
+<div class="container">
+
+<div class="quiz">
+
+<p class="eyebrow">QUICK PRACTICE</p>
+
+<h3>Test Your Prepositions</h3>
+
+
+<div class="question">
+<p>1. She was born ___ 2001.</p>
+
+<div class="options">
+<label><input type="radio" name="q1" value="a"> at</label>
+<label><input type="radio" name="q1" value="b"> on</label>
+<label><input type="radio" name="q1" value="c"> in</label>
+</div>
+</div>
+
+
+<div class="question">
+<p>2. The meeting starts ___ 10 AM.</p>
+
+<div class="options">
+<label><input type="radio" name="q2" value="a"> at</label>
+<label><input type="radio" name="q2" value="b"> in</label>
+<label><input type="radio" name="q2" value="c"> on</label>
+</div>
+</div>
+
+
+<div class="question">
+<p>3. I have lived here ___ five years.</p>
+
+<div class="options">
+<label><input type="radio" name="q3" value="a"> since</label>
+<label><input type="radio" name="q3" value="b"> for</label>
+<label><input type="radio" name="q3" value="c"> at</label>
+</div>
+</div>
+
+
+<button class="btn btn-primary" onclick="checkPrepositionQuiz()">
+Check Answers →
+</button>
+
+<div id="result" class="result"></div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+<div class="footer-brand">Grammar Mantra</div>
+<p>Learn English. Understand Grammar. Improve Every Day.</p>
+</div>
+
+<div>
+<h4>Explore</h4>
+<a href="../grammar.html">Grammar</a>
+<a href="../index.html#vocabulary">Vocabulary</a>
+<a href="../index.html#practice">Practice</a>
+<a href="../index.html#videos">Videos</a>
+</div>
+
+<div>
+<h4>Connect</h4>
+<a href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">
+YouTube
+</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+
+</div>
+
+<div class="container copyright">
+© <span id="year"></span> Grammar Mantra. All rights reserved.
+</div>
+
+</footer>
+
+
+<script src="../script.js"></script>
+
+<script>
+function checkPrepositionQuiz(){
+
+const answers={
+q1:'c',
+q2:'a',
+q3:'b'
+};
+
+let score=0;
+
+Object.keys(answers).forEach(q=>{
+
+const selected=document.querySelector(
+'input[name="'+q+'"]:checked'
+);
+
+if(selected && selected.value===answers[q]){
+score++;
+}
+
+});
+
+document.getElementById('result').textContent=
+'Your score: '+score+'/3';
+
+}
+</script>
+
+</body>
+</html>
