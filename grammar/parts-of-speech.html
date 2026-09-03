@@ -1,4 +1,534 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Parts of Speech | Grammar Mantra</title><link rel="stylesheet" href="../styles.css"></head><body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="../index.html"><img src="../assets/logo.jpg" alt="Grammar Mantra logo"></a><button class="menu-toggle" aria-label="Open menu">☰</button><nav class="nav"><a href="../index.html">Home</a><a class="active" href="../grammar.html">Grammar</a><a href="../index.html#vocabulary">Vocabulary</a><a href="../index.html#practice">Practice</a><a href="../index.html#videos">Videos</a><a class="nav-cta" href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">Watch on YouTube ↗</a></nav></div></header>
-<main><section class="hero"><div class="container"><p class="eyebrow">ENGLISH GRAMMAR</p><h1>Parts of Speech</h1><p class="hero-text">This lesson page is part of Grammar Mantra's topic library. Detailed rules, examples and practice for this topic will be added here.</p><a class="btn btn-primary" href="../grammar.html">← Back to Grammar</a></div></section><section class="section"><div class="container"><div class="practice-section" style="padding:30px;border-radius:20px"><h2 style="margin-top:0">Coming next</h2><p>We're building this topic with the same detailed lesson format used for Tenses.</p></div></div></section></main>
-<footer><div class="container footer-grid"><div><div class="footer-brand">Grammar Mantra</div><p>Learn English. Understand Grammar. Improve Every Day.</p></div><div><h4>Explore</h4><a href="../grammar.html">Grammar</a><a href="../index.html#vocabulary">Vocabulary</a><a href="../index.html#practice">Practice</a><a href="../index.html#videos">Videos</a></div><div><h4>Connect</h4><a href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">YouTube</a></div></div><div class="container copyright">© <span id="year"></span> Grammar Mantra. All rights reserved.</div></footer><script src="../script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description" content="Learn the 8 parts of speech in English grammar with simple rules, definitions and examples.">
+
+<title>Parts of Speech | English Grammar | Grammar Mantra</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles.css">
+
+<style>
+.lesson-hero{
+  padding:58px 0 65px;
+  background:linear-gradient(115deg,#fffaf3,#fff2e3);
+  border-bottom:1px solid var(--line)
+}
+
+.crumb{
+  font-size:12px;
+  color:#8b8279;
+  margin-bottom:20px
+}
+
+.crumb a{
+  color:var(--orange);
+  font-weight:700
+}
+
+.lesson-hero h1{
+  font:700 clamp(42px,5vw,62px)/1.05 "Playfair Display",serif;
+  margin:0 0 16px
+}
+
+.lesson-hero h1 span{
+  color:var(--orange)
+}
+
+.lesson-hero .lead{
+  max-width:700px;
+  color:var(--muted);
+  font-size:17px;
+  margin:0
+}
+
+.lesson-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 280px;
+  gap:42px
+}
+
+.lesson-content h2{
+  font:700 34px/1.15 "Playfair Display",serif;
+  margin:0 0 15px
+}
+
+.lesson-content h3{
+  font-size:21px;
+  margin:30px 0 10px
+}
+
+.lesson-content p{
+  color:var(--muted)
+}
+
+.lesson-content ul{
+  color:var(--muted);
+  padding-left:22px
+}
+
+.info-box{
+  background:#fff3e5;
+  border:1px solid #f1d1b3;
+  border-radius:18px;
+  padding:20px;
+  margin:25px 0
+}
+
+.info-box strong{
+  color:var(--ink)
+}
+
+.grammar-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:17px;
+  background:#fff;
+  font-size:13px
+}
+
+.grammar-table th,
+.grammar-table td{
+  padding:15px;
+  border-bottom:1px solid var(--line);
+  text-align:left;
+  vertical-align:top
+}
+
+.grammar-table th{
+  background:#fff3e5;
+  color:#3b332c;
+  font-size:11px;
+  letter-spacing:.6px;
+  text-transform:uppercase
+}
+
+.grammar-table tr:last-child td{
+  border-bottom:0
+}
+
+.part-name{
+  font-weight:800;
+  color:var(--ink)
+}
+
+.example{
+  border-left:3px solid var(--orange);
+  padding:10px 15px;
+  margin:12px 0;
+  background:#fff
+}
+
+.example em{
+  color:var(--orange);
+  font-style:normal;
+  font-weight:700
+}
+
+.side-card{
+  position:sticky;
+  top:100px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:21px;
+  box-shadow:0 5px 20px rgba(50,35,20,.04)
+}
+
+.side-card h3{
+  font:700 21px "Playfair Display",serif;
+  margin:0 0 14px
+}
+
+.side-card a{
+  display:block;
+  font-size:12px;
+  color:#6f6861;
+  padding:9px 0;
+  border-bottom:1px solid #f0e7dd
+}
+
+.side-card a:hover{
+  color:var(--orange)
+}
+
+.side-card a:last-child{
+  border:0
+}
+
+.cta-box{
+  margin-top:35px;
+  padding:30px;
+  border-radius:20px;
+  background:#29241f;
+  color:#fff
+}
+
+.cta-box h2{
+  font-size:29px;
+  margin:0 0 8px
+}
+
+.cta-box p{
+  color:#c7beb5;
+  margin:0 0 20px
+}
+
+@media(max-width:850px){
+  .lesson-layout{
+    grid-template-columns:1fr
+  }
+
+  .side-card{
+    position:static
+  }
+
+  .grammar-table{
+    font-size:12px
+  }
+
+  .grammar-table th,
+  .grammar-table td{
+    padding:11px
+  }
+}
+
+@media(max-width:560px){
+  .lesson-hero{
+    padding:50px 0
+  }
+
+  .lesson-content h2{
+    font-size:30px
+  }
+
+  .grammar-table{
+    display:block;
+    overflow-x:auto;
+    white-space:normal
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="../index.html">
+      <img src="../assets/logo.jpg" alt="Grammar Mantra logo">
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a class="active" href="../grammar.html">Grammar</a>
+      <a href="../index.html#vocabulary">Vocabulary</a>
+      <a href="../index.html#practice">Practice</a>
+      <a href="../index.html#videos">Videos</a>
+      <a class="nav-cta" href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">
+        Watch on YouTube ↗
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="lesson-hero">
+  <div class="container">
+
+    <div class="crumb">
+      <a href="../index.html">Home</a>
+      &nbsp;›&nbsp;
+      <a href="../grammar.html">Grammar</a>
+      &nbsp;›&nbsp;
+      Parts of Speech
+    </div>
+
+    <p class="eyebrow">ENGLISH GRAMMAR • BASICS</p>
+
+    <h1>Parts of <span>Speech</span></h1>
+
+    <p class="lead">
+      Learn the 8 parts of speech in English with simple definitions,
+      rules and practical examples.
+    </p>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container lesson-layout">
+
+    <article class="lesson-content">
+
+      <h2>What are Parts of Speech?</h2>
+
+      <p>
+        Parts of speech are categories of words based on the role they
+        play in a sentence. Understanding them helps you identify how
+        words work and how sentences are formed.
+      </p>
+
+      <div class="info-box">
+        <strong>Quick idea:</strong>
+        English has eight commonly taught parts of speech:
+        Noun, Pronoun, Verb, Adjective, Adverb, Preposition,
+        Conjunction and Interjection.
+      </div>
+
+      <h2 id="overview">8 Parts of Speech at a Glance</h2>
+
+      <table class="grammar-table">
+
+        <thead>
+          <tr>
+            <th>Part of Speech</th>
+            <th>What it does</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td class="part-name">Noun</td>
+            <td>Names a person, place, thing or idea.</td>
+            <td>Riya lives in <em>Delhi</em>.</td>
+          </tr>
+
+          <tr>
+            <td class="part-name">Pronoun</td>
+            <td>Used in place of a noun.</td>
+            <td><em>She</em> is my friend.</td>
+          </tr>
+
+          <tr>
+            <td class="part-name">Verb</td>
+            <td>Shows an action, event or state.</td>
+            <td>They <em>play</em> football.</td>
+          </tr>
+
+          <tr>
+            <td class="part-name">Adjective</td>
+            <td>Describes or modifies a noun or pronoun.</td>
+            <td>It is a <em>beautiful</em> flower.</td>
+          </tr>
+
+          <tr>
+            <td class="part-name">Adverb</td>
+            <td>Modifies a verb, adjective or another adverb.</td>
+            <td>She sings <em>beautifully</em>.</td>
+          </tr>
+
+          <tr>
+            <td class="part-name">Preposition</td>
+            <td>Shows a relationship between words.</td>
+            <td>The book is <em>on</em> the table.</td>
+          </tr>
+
+          <tr>
+            <td class="part-name">Conjunction</td>
+            <td>Connects words, phrases or clauses.</td>
+            <td>I tried, <em>but</em> I failed.</td>
+          </tr>
+
+          <tr>
+            <td class="part-name">Interjection</td>
+            <td>Expresses a sudden feeling or emotion.</td>
+            <td><em>Wow!</em> That is amazing.</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h2 id="details">Parts of Speech Explained</h2>
+
+      <h3>1. Noun</h3>
+
+      <p>
+        A noun is a word used to name a person, place, thing, animal
+        or idea.
+      </p>
+
+      <div class="example">
+        <em>Rahul</em> bought a new <em>car</em>.
+      </div>
+
+      <h3>2. Pronoun</h3>
+
+      <p>
+        A pronoun is used instead of a noun to avoid repeating the same
+        noun again and again.
+      </p>
+
+      <div class="example">
+        <em>Rahul</em> is absent because <em>he</em> is ill.
+      </div>
+
+      <h3>3. Verb</h3>
+
+      <p>
+        A verb generally shows an action, occurrence or state.
+      </p>
+
+      <div class="example">
+        She <em>writes</em> every day.
+      </div>
+
+      <h3>4. Adjective</h3>
+
+      <p>
+        An adjective describes or gives more information about a noun
+        or pronoun.
+      </p>
+
+      <div class="example">
+        She bought a <em>new</em> dress.
+      </div>
+
+      <h3>5. Adverb</h3>
+
+      <p>
+        An adverb can describe a verb, an adjective or another adverb.
+        It often tells us how, when, where or to what extent.
+      </p>
+
+      <div class="example">
+        He runs <em>quickly</em>.
+      </div>
+
+      <h3>6. Preposition</h3>
+
+      <p>
+        A preposition shows the relationship of a noun or pronoun
+        with another word in the sentence.
+      </p>
+
+      <div class="example">
+        The keys are <em>on</em> the table.
+      </div>
+
+      <h3>7. Conjunction</h3>
+
+      <p>
+        A conjunction connects words, phrases or clauses.
+      </p>
+
+      <div class="example">
+        I wanted to go, <em>but</em> it was raining.
+      </div>
+
+      <h3>8. Interjection</h3>
+
+      <p>
+        An interjection expresses a sudden emotion, feeling or reaction.
+      </p>
+
+      <div class="example">
+        <em>Wow!</em> That is a beautiful view.
+      </div>
+
+      <h2 id="how">How to Identify Parts of Speech</h2>
+
+      <p>
+        To identify a part of speech, don't look at the word alone.
+        Look at the role the word plays in the sentence.
+      </p>
+
+      <ul>
+        <li>Find the noun or pronoun.</li>
+        <li>Identify the verb or action.</li>
+        <li>Check which words describe nouns or pronouns.</li>
+        <li>Check which words modify verbs, adjectives or adverbs.</li>
+        <li>Look for words showing relationships such as place, time or direction.</li>
+        <li>Identify words that connect other words or clauses.</li>
+        <li>Notice words expressing sudden emotion.</li>
+      </ul>
+
+      <div class="cta-box">
+
+        <p class="eyebrow">GRAMMAR MANTRA</p>
+
+        <h2>Want to master English grammar?</h2>
+
+        <p>
+          Learn grammar step by step with simple explanations,
+          examples and practice.
+        </p>
+
+        <a class="btn btn-primary" href="../grammar.html">
+          Explore More Grammar →
+        </a>
+
+      </div>
+
+    </article>
+
+    <aside class="side-card">
+
+      <h3>On this page</h3>
+
+      <a href="#overview">8 Parts of Speech</a>
+      <a href="#details">Parts of Speech Explained</a>
+      <a href="#how">How to Identify Them</a>
+      <a href="../grammar.html">← All Grammar Topics</a>
+
+    </aside>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+
+  <div class="container footer-grid">
+
+    <div>
+      <div class="footer-brand">Grammar Mantra</div>
+      <p>Learn English. Understand Grammar. Improve Every Day.</p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <a href="../grammar.html">Grammar</a>
+      <a href="../index.html#vocabulary">Vocabulary</a>
+      <a href="../index.html#practice">Practice</a>
+      <a href="../index.html#videos">Videos</a>
+    </div>
+
+    <div>
+      <h4>Connect</h4>
+      <a href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">
+        YouTube
+      </a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="container copyright">
+    © <span id="year"></span> Grammar Mantra. All rights reserved.
+  </div>
+
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
