@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Test your English grammar with a quick Grammar Mantra quiz.">
+<title>Grammar Quiz | Grammar Mantra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.quiz-page{padding:70px 0 90px}
+.quiz-wrap{max-width:850px;margin:auto}
+.quiz-box{background:var(--cream-2);border-radius:24px;padding:30px}
+.question{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:15px}
+.question p{font-weight:700;margin:0 0 12px}
+.options label{display:block;margin:8px 0;color:var(--muted);cursor:pointer}
+.quiz-box button{margin-top:8px;border:0;cursor:pointer}
+.result{margin-top:18px;font-weight:700;font-size:17px;color:var(--orange)}
+.back-link{display:inline-block;margin-top:25px;color:var(--orange);font-weight:700}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html"><img src="assets/logo.jpg" alt="Grammar Mantra logo"></a>
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav class="nav" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="grammar.html">Grammar</a>
+<a href="index.html#vocabulary">Vocabulary</a>
+<a class="active" href="practice.html">Practice</a>
+<a href="index.html#videos">Videos</a>
+<a class="nav-cta" href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="lesson-hero">
+<div class="container">
+<div class="crumb"><a href="index.html">Home</a> &nbsp;›&nbsp; Practice &nbsp;›&nbsp; Grammar Quiz</div>
+<p class="eyebrow">PRACTICE • GRAMMAR QUIZ</p>
+<h1>Test Your <span>Grammar.</span></h1>
+<p class="lead">Answer the questions and check how well you understand English grammar.</p>
+</div>
+</section>
+
+<section class="section quiz-page">
+<div class="container quiz-wrap">
+<div class="quiz-box">
+<p class="eyebrow">QUICK QUIZ</p>
+<h2>Grammar Quiz</h2>
+
+<div class="question"><p>1. She ___ to school every day.</p><div class="options">
+<label><input type="radio" name="q1" value="a"> go</label>
+<label><input type="radio" name="q1" value="b"> goes</label>
+<label><input type="radio" name="q1" value="c"> going</label>
+</div></div>
+
+<div class="question"><p>2. I ___ my homework yesterday.</p><div class="options">
+<label><input type="radio" name="q2" value="a"> complete</label>
+<label><input type="radio" name="q2" value="b"> have completed</label>
+<label><input type="radio" name="q2" value="c"> completed</label>
+</div></div>
+
+<div class="question"><p>3. He has lived here ___ 2020.</p><div class="options">
+<label><input type="radio" name="q3" value="a"> since</label>
+<label><input type="radio" name="q3" value="b"> for</label>
+<label><input type="radio" name="q3" value="c"> from</label>
+</div></div>
+
+<div class="question"><p>4. She is ___ honest person.</p><div class="options">
+<label><input type="radio" name="q4" value="a"> a</label>
+<label><input type="radio" name="q4" value="b"> an</label>
+<label><input type="radio" name="q4" value="c"> the</label>
+</div></div>
+
+<div class="question"><p>5. The students ___ studying when the teacher arrived.</p><div class="options">
+<label><input type="radio" name="q5" value="a"> were</label>
+<label><input type="radio" name="q5" value="b"> are</label>
+<label><input type="radio" name="q5" value="c"> have</label>
+</div></div>
+
+<button class="btn btn-primary" onclick="checkQuiz()">Check Answers →</button>
+<div id="result" class="result"></div>
+</div>
+<a class="back-link" href="index.html#practice">← Back to Practice</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-grid">
+<div><div class="footer-brand">Grammar Mantra</div><p>Learn English. Understand Grammar. Improve Every Day.</p></div>
+<div><h4>Explore</h4><a href="grammar.html">Grammar</a><a href="index.html#vocabulary">Vocabulary</a><a href="practice.html">Practice</a><a href="index.html#videos">Videos</a></div>
+<div><h4>Connect</h4><a href="https://www.youtube.com/@grammarmantra" target="_blank" rel="noopener">YouTube</a><a href="#">About</a><a href="#">Contact</a></div>
+</div>
+<div class="container copyright">© <span id="year"></span> Grammar Mantra. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function checkQuiz(){
+  const answers={q1:'b',q2:'c',q3:'a',q4:'b',q5:'a'};
+  let score=0;
+  Object.keys(answers).forEach(q=>{
+    const selected=document.querySelector('input[name="'+q+'"]:checked');
+    if(selected && selected.value===answers[q]) score++;
+  });
+  document.getElementById('result').textContent='Your score: '+score+'/5';
+}
+</script>
+</body>
+</html>
